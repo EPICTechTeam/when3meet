@@ -1,0 +1,73 @@
+html
+
+	head
+		title when3meet
+
+	body
+		h1 Hello
+		a(href='/schedule') View schedule
+		h3 Please input your schedule below
+		p Check the meals you are available for
+		form(action='/add-schedule', method='GET')
+			table
+				thead
+					tr
+						td
+						td Sun
+						td Mon
+						td Tue
+						td Wed
+						td Thu
+						td Fri
+						td Sat
+				tbody
+					tr
+						td Breakfast
+						td
+							input(type='checkbox', name='b-1')
+						td
+							input(type='checkbox', name='b-2')
+						td
+							input(type='checkbox', name='b-3')
+						td
+							input(type='checkbox', name='b-4')
+						td
+							input(type='checkbox', name='b-5')
+						td
+							input(type='checkbox', name='b-6')
+						td
+							input(type='checkbox', name='b-7')
+					tr
+						td Lunch
+						td
+							input(type='checkbox', name='l-1')
+						td
+							input(type='checkbox', name='l-2')
+						td
+							input(type='checkbox', name='l-3')
+						td
+							input(type='checkbox', name='l-4')
+						td
+							input(type='checkbox', name='l-5')
+						td
+							input(type='checkbox', name='l-6')
+						td
+							input(type='checkbox', name='l-7')
+					tr
+						td Dinner
+						td
+							input(type='checkbox', name='d-1')
+						td
+							input(type='checkbox', name='d-2')
+						td
+							input(type='checkbox', name='d-3')
+						td
+							input(type='checkbox', name='d-4')
+						td
+							input(type='checkbox', name='d-5')
+						td
+							input(type='checkbox', name='d-6')
+						td
+							input(type='checkbox', name='d-7')
+			br
+			button(type='submit') Submit

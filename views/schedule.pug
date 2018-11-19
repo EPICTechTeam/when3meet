@@ -1,0 +1,53 @@
+html
+
+	head
+		title when3meet
+
+	body
+		h1 Schedule
+		a(href='/') Input schedule
+		br
+		br
+		table
+			thead
+				tr
+					td
+					td Sun
+					td Mon
+					td Tue
+					td Wed
+					td Thu
+					td Fri
+					td Sat
+			tbody
+				tr
+					td Breakfast
+					td= schedule.b[0]
+					td= schedule.b[1]
+					td= schedule.b[2]
+					td= schedule.b[3]
+					td= schedule.b[4]
+					td= schedule.b[5]
+					td= schedule.b[6]
+				tr
+					td Lunch
+					td= schedule.l[0]
+					td= schedule.l[1]
+					td= schedule.l[2]
+					td= schedule.l[3]
+					td= schedule.l[4]
+					td= schedule.l[5]
+					td= schedule.l[6]
+				tr
+					td Dinner
+					td= schedule.d[0]
+					td= schedule.d[1]
+					td= schedule.d[2]
+					td= schedule.d[3]
+					td= schedule.d[4]
+					td= schedule.d[5]
+					td= schedule.d[6]
+		br
+		p= count + ' submissions total'
+		br
+		a(href='/reset') Reset
